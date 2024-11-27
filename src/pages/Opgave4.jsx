@@ -6,9 +6,9 @@ import Loader from '../components/Loader'
 
 import useRequestData from '../Hooks/useRequestData'
 
-const Energidata = () => {
+const Opgave4 = () => {
 
-    const {makeRequest, isLoading, data, error} = useRequestData();
+  const {makeRequest, isLoading, data, error} = useRequestData();
 
     useEffect(() => {
  
@@ -19,7 +19,7 @@ const Energidata = () => {
   return ( //så laver man en return til at vise hvordan man vil opbygge siden
     <div className='container'>
       
-        <Title titleText="Energidata"/>
+        <Title titleText="Opgave 4 - valg fri opgave"/>
         { isLoading && <Loader /> }
         { error && <Error /> }
 
@@ -27,4 +27,4 @@ const Energidata = () => {
   )
 }
 
-export default Energidata
+export default Opgave4

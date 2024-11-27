@@ -7,6 +7,7 @@ import ViborgHaveservice1 from "./pages/ViborgHaveservice1"
 import ViborgHaveservice2 from "./pages/ViborgHaveservice2"
 import Vejret from "./pages/Vejret"
 import Energidata from "./pages/Energidata"
+import Opgave4 from "./pages/Opgave4"
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
           },
           {
             path: "/energidata", element: <Energidata />
+          },
+          {
+            path: "/opgave4", element: <Opgave4 />
           }
         ]
       }
