@@ -21,11 +21,16 @@ const Navbar = () => {
                     <li className='mx-4 my-5'>
                         <NavLink to ="/">Forsiden</NavLink>
                     </li>
-                    <li className='mx-4 my-5'>
-                        <NavLink to ="/viborghaveservice1">ViborgHaveservice1</NavLink>
-                    </li>
-                    <li className='mx-4 my-5'>
-                        <NavLink to ="/viborghaveservice2">ViborgHaveservice2</NavLink>
+                    <li className='relative mx-4 my-5 group'>
+                        Viborghaveservice ↴
+                        <menu className='w-auto md:hidden md:group-hover:block md:group-hover:absolute md:bg-purple-900 whitespace-nowrap'>
+                            <li className='mx-4 my-5'>
+                                <NavLink to ="/viborghaveservice1">ViborgHaveservice1</NavLink>
+                            </li>
+                            <li className='mx-4 my-5'>
+                                <NavLink to ="/viborghaveservice2">ViborgHaveservice2</NavLink>
+                            </li>
+                        </menu>
                     </li>
                     <li className='mx-4 my-5'>
                         <NavLink to ="/vejret">Vejret</NavLink>
